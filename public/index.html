@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<title>JUSTICE lEAGUE</title>
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container" ng-controller="AppCtrl">
+	<h1> Justice League </h1>
+				<input class="form-control" ng-model="contact.name" placeholder="REAL NAME">
+				<input class="form-control" ng-model="contact.email" placeholder="ABILITES">
+				<input class="form-control" ng-model="contact.number" placeholder="AGENT NAME">
+				<br>
+				<button class="btn btn-info" ng-click="addContact()">Add Agent</button>
+				<button class="btn btn-info" ng-click="update()">Update</button> 
+				<button class="btn btn-info" ng-click="deselect()">Clear</button>
+	<div style="overflow-x:auto;">
+	<table class="table" align="center">
+		<thead>
+			<tr>
+				<th>Real Name</th>
+				<th>Abilities</th>
+				<th>Agent Name</th>
+				<th>Add New Agents</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="contact in contactlist">
+				<td>{{contact.name}}</td>
+				<td>{{contact.email}}</td>
+				<td>{{contact.number}}</td>
+				<td><button class="btn btn-dan" ng-click="remove(contact._id)">Remove</button></td>
+				<td><button class="btn btn-dan" ng-click="edit(contact._id)"> Edit </button></td>
+
+			</tr>
+		</tbody>
+	</table>
+	</div>
+</div>
+	
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.min.js"></script>
+<script src="controllers/controller.js"></script>
+</body>
+</html>
