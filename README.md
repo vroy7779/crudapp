@@ -3,7 +3,7 @@
 <img src="http://vaibhavroy.x10.bz/desk.png" alt="mean stack tutorial app">
 <br>
 <h2> Mobile View </h2>
-<img src="http://vaibhavroy.x10.bz/desk.png" alt="mean stack tutorial app">
+<img src="http://vaibhavroy.x10.bz/mobile.png" alt="mean stack tutorial app">
 <br>
 <br>
 <h2> Backend </h2>
